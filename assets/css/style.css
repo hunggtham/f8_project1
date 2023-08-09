@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+/* Common */
+
+.content{
+    width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+    text-decoration: none;
+}
+/* Header */
+.header{
+    /* background-color: green; */
+    background-color: #E6F0FF;
+    height: 100vh;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+}
+.navbar ul{
+    display:flex;
+}
+
+.navbar .actions{
+    margin-left: auto;
+}
+.navbar ul a{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 21px;
+    color: #4f5361;
+    padding: 8px 14px;
+}
