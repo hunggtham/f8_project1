@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+:root{
+    --primary-color: #0f143c;
+}
 html{
     font-size: 62.5%;
 }
@@ -12,26 +15,46 @@ body{
 
 .content{
     width: 1110px;
+    /* max-width: 100%; */
+    max-width: calc(100%-48px);
     margin-left: auto;
     margin-right: auto;
 }
-
 a{
     text-decoration: none;
 }
-/* Header */
+
+.btn{
+    display: inline-block;
+    min-width: 98px;
+    border-radius: 12px;
+    background: var(--primary-color);
+    color: #FFF;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: normal;
+    padding: 18px 16px;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+/* ================Header ======================*/
 .header{
     /* background-color: green; */
     background-color: #E6F0FF;
     height: 100vh;
+    position: relative;
 }
 
 .navbar{
     display:flex;
     align-items: center;
+    padding-top: 38px;
 }
 .navbar ul{
     display:flex;
+    margin-left: 64px;
 }
 
 .navbar .actions{
@@ -43,4 +66,203 @@ a{
     line-height: 21px;
     color: #4f5361;
     padding: 8px 14px;
+}
+.navbar ul a:hover{
+    text-decoration: underline;
+}
+.navbar .action-link{
+    color: #0F1B4C;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.navbar .action-btn{
+    padding: 13px 16px;
+    margin-left: 18px;
+    border-radius: 8px;
+}
+
+
+/* hero */
+.hero{
+    margin-top: 130px;
+}
+.hero .info{
+    width: 51%;
+}
+.hero .sub-title{
+    color: #687690;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+.hero .title {
+    margin-top: 8px;
+    color: #000336;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.19;
+}
+.hero .desc {
+    margin-top: 30px;
+    color: #5A6473;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.78;
+}
+.hero .hero-cta {
+    min-width: 170px;
+    margin-top: 40px;
+}
+
+.hero-img{
+    position: absolute;
+    right: calc((100vw - 1110px) / 2 - 100px);
+    bottom: 0;
+}
+
+
+/* =============Clients=============== */
+.clients{
+    margin-top: 122px;
+}
+.clients .row{
+    display: flex;
+    justify-content: space-between;
+}
+.clients .desc{
+    color: #7D8589;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.25rem; /* 125% */
+}
+.clients .row-desc{
+    margin-top: 23px;
+}
+.clients .images{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 96px;
+}
+/* ================Clients================== */
+
+.guides{
+    margin-top: 200px;
+}
+
+.guides .sub-title{
+    position: relative;
+    color: #000339;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.guides .sub-title::before{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    /* center of this */
+    transform: translateX(-50%);
+    content:"";
+    display: inline-block;
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+}
+
+.guides .desc{
+    margin: 20px auto 0;
+    color: #5A6473;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.875;
+    width: 459px;
+    max-width: 100%;
+}
+
+.list-guide{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+.guide-item{
+    margin: 0 70px;
+    text-align: center;
+}
+.guide-item .title{
+    margin-top: 26px;
+    color: #3B3C45;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.1; /* 110% */
+}
+.guide-item .link{
+    display: inline-block;
+    margin-top: 10px;
+    color: #0689FF;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.guide-item .arrow{
+    margin-left: 6px;
+}
+
+.guide-cta{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 50px;
+}
+.guide-cta .btn{
+    min-width: 170px;
+}
+
+
+/* ================featured================== */
+
+.featured{
+    margin-top: 230px;
+}
+
+.featured .sub-title{
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1;
+}
+.featured .row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.featured  .desc{
+    color: #5A6473;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875;
+}
+.featured .link{
+    display: flex;
+    align-items: center;
+    color: #0689FF;
+    font-size: 1.8rem;
+    font-weight: 600;
+
+}
+/* same with .feature.link display:flex, align-items:center, can giua mui ten */
+/* .featured .link .arrow{
+    position: relative;
+    top: -2px;
+} */
+
+.featured .link .arrow{
+    margin-left: 8px;
 }
