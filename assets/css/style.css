@@ -150,8 +150,21 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 96px;
+  margin-top: 70px;
 }
+
+.clients .images a {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  padding: 0 42px;
+  /* background-color: orange; */
+  border-radius: 12px;
+}
+.clients .images a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
 /* ================Clients================== */
 
 .guides {
@@ -611,6 +624,10 @@ a {
   height: 28px;
   align-items: center;
   justify-content: center;
+  background: #f9f9f9;
+}
+.footer .social-link + .social-link {
+  margin-left: 16px;
 }
 
 .footer .social-link:hover {
